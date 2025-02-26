@@ -1,4 +1,6 @@
-package hello.order;
+package hello.core1.Service;
+
+import hello.core1.dto.Order;
 
 public interface OrderService {
 

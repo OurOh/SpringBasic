@@ -1,15 +1,17 @@
-package hello.core;
+package hello.core1;
 
-import hello.core.Service.MemberService;
-import hello.core.Service.MemberServiceImpl;
-import hello.core.member.Grade;
-import hello.core.member.Member;
+import hello.core1.Service.MemberService;
+import hello.core1.Service.MemberServiceImpl;
+import hello.core1.dto.Grade;
+import hello.core1.dto.Member;
 
 public class MemberApp {
 
     public static void main(String[] args) {
 
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+
+        MemberService memberService = appConfig.memberService();
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
 

@@ -1,6 +1,6 @@
-package hello.core.Service;
+package hello.core1.Service;
 
-import hello.core.member.Member;
+import hello.core1.dto.Member;
 
 public interface MemberService {
 

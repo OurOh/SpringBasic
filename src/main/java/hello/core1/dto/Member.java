@@ -1,4 +1,4 @@
-package hello.core.member;
+package hello.core1.dto;
 
 public class Member {
 

@@ -1,4 +1,4 @@
-package hello.order;
+package hello.core1.dto;
 
 public class Order {
 

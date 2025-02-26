@@ -1,6 +1,6 @@
-package hello.core.repository;
+package hello.core1.repository;
 
-import hello.core.member.Member;
+import hello.core1.dto.Member;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +11,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public void save(Member member) {
+
         store.put(member.getId(), member);
     }
 
