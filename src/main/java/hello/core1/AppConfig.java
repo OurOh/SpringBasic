@@ -12,10 +12,12 @@ import hello.core1.repository.MemoryMemberRepository;
 
 public class AppConfig {
 
-    //역할과 구현
+    //구성 영역. 객체를 생성하고 구성(Configuration)하는 영역
+
+    //역할과 구현 / 역할에 따른 구현
 
     public MemberService memberService() {
-        return new MemberServiceImpl (memberRepository());
+        return new MemberServiceImpl(memberRepository());
     }
 
     public OrderService orderService() {
@@ -29,7 +31,7 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy() {
-        //return new FixDiscountPolicy();
+        // return new FixDiscountPolicy();
         // 배우를 교체한다.
         return new RateDiscountPolicy();
     }
