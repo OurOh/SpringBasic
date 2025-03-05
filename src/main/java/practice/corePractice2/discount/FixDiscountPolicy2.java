@@ -1,9 +1,11 @@
-package hello.corePractice2.discount;
+package practice.corePractice2.discount;
 
 import hello.core1.dto.Grade;
 import hello.core1.dto.Member;
+import org.springframework.stereotype.Component;
 
-public class FixDiscountPolicy implements DiscountPolicy {
+@Component
+public class FixDiscountPolicy2 implements DiscountPolicy2 {
 
     private int discountFixAmount = 1000;
 

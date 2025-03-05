@@ -1,4 +1,4 @@
-package hello.corePractice2.service;
+package practice.corePractice2.service;
 
 import hello.core1.dto.Order;
 

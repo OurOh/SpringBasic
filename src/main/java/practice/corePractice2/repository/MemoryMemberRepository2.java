@@ -1,11 +1,11 @@
-package hello.corePractice2.repository;
+package practice.corePractice2.repository;
 
 import hello.core1.dto.Member;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemoryMemberRepository implements MemberRepository {
+public class MemoryMemberRepository2 implements MemberRepository2 {
 
     private static Map<Long, Member> store = new HashMap<>();
 

@@ -1,4 +1,4 @@
-package hello.corePractice2.dto;
+package practice.corePractice2.dto;
 
 public class Order2 {
 

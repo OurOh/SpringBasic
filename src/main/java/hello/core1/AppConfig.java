@@ -12,7 +12,7 @@ import hello.core1.repository.MemoryMemberRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//설정을 구성한다는 뜻
+//설정을 구성한다는 뜻, 싱글톤 보장.
 @Configuration
 public class AppConfig {
 

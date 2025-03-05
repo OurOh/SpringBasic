@@ -1,17 +1,17 @@
-package hello.corePractice2.service;
+package practice.corePractice2.service;
 
 import hello.core1.Service.OrderService;
 import hello.core1.dto.Member;
-import hello.corePractice2.discount.DiscountPolicy;
-import hello.corePractice2.discount.FixDiscountPolicy;
+import practice.corePractice2.discount.DiscountPolicy2;
+import practice.corePractice2.discount.FixDiscountPolicy2;
 import hello.core1.dto.Order;
-import hello.corePractice2.repository.MemberRepository;
-import hello.corePractice2.repository.MemoryMemberRepository;
+import practice.corePractice2.repository.MemberRepository2;
+import practice.corePractice2.repository.MemoryMemberRepository2;
 
 public class OrderServiceImpl2 implements OrderService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
-    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+    private final MemberRepository2 memberRepository = new MemoryMemberRepository2();
+    private final DiscountPolicy2 discountPolicy = new FixDiscountPolicy2();
 
 
     @Override
