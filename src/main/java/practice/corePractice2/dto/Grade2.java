@@ -1,6 +1,6 @@
 package practice.corePractice2.dto;
 
-public enum Grade2 {
+public enum Grade2{
     BASIC,
     VIP
 }

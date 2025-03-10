@@ -5,26 +5,20 @@ import hello.core1.dto.Member;
 import hello.core1.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import practice.corePractice2.repository.MemberRepository2;
+import practice.corePractice2.repository.MemoryMemberRepository2;
 
-@Component
-public class MemberServiceImpl2 implements MemberService {
+public class MemberServiceImpl2 implements MemberService2 {
 
-    private final MemberRepository memberRepository;
-
-    //@Autowired를 사용하면 생성자에서 여러 의존관계도 한번에 주입받을 수 있다.
-    @Autowired
-    public MemberServiceImpl2(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
-
-    @Override
-    public void join(Member member) {
-        memberRepository.save(member);
-    }
+    private final MemberRepository2 memberRepository = new MemoryMemberRepository2();
 
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
     }
 
+    @Override
+    public void join(Member member) {
+        memberRepository.save(member);
+    }
 }

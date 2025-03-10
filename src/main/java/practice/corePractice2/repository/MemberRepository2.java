@@ -4,8 +4,8 @@ import hello.core1.dto.Member;
 
 public interface MemberRepository2 {
 
-    void save(Member member);
-
     Member findById(Long memberId);
+
+    void save(Member member);
 
 }

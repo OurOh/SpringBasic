@@ -18,10 +18,13 @@ public class OrderApp2 {
 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
         OrderService orderService = applicationContext.getBean("orderService", OrderService.class);
+
         long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
+
         Order order = orderService.createOrder(memberId, "itemA", 10000);
+
         System.out.println("order = " + order);
     }
 }
